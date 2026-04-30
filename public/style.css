@@ -3,6 +3,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
+    text-align: center;
 }
 .navbar{
     display: flex;
@@ -30,7 +31,9 @@ body{
     color:aliceblue;
 }
 
-.content,.homecontent{
+.content{
+    display: none;}
+#home {
     display:block;
     align-items: center;
 }
@@ -70,6 +73,7 @@ body{
 #btncontainer{
     display:flex;
     gap:20px;
+    justify-content:center ;
 }
 
 /* For the insertion success message */
@@ -90,3 +94,30 @@ body{
     display: none;
     opacity: 0;
 }
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th {
+    background-color:rgba(102, 176, 241, 1);
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+

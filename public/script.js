@@ -3,7 +3,7 @@ function showSection(sectionID){
     //initially, select all sections
     // use querySelectorAll for all sections with class content and homecontent
     const sections = document.querySelectorAll('.content');
-    const homesection = document.querySelectorAll('.homecontent');
+   
 
     //hide the resulting content sections using foreach
     sections.forEach(section => {
@@ -36,3 +36,11 @@ window.onload = function() {
         window.history.replaceState({}, document.title, window.location.pathname);
     }
 }
+
+document.getElementById("clrbtn").addEventListener("click", function () {
+    document.getElementById("surname").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("middlename").value = "";
+    document.getElementById("address").value = "";
+    document.getElementById("contact").value = "";
+});
